@@ -37,6 +37,12 @@
                 lng: 12.536958
             };
 
+            var vesterbro = {
+
+                lat: 55.666597,
+                lng: 12.551207
+            };
+
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 4,
                 center: myLatLng
@@ -51,6 +57,12 @@
                 position: myLatLng2,
                 map: map,
                 title: 'DOMMERVEJ!'
+            });
+
+            var marker = new google.maps.Marker({
+                position: vesterbro,
+                map: map,
+                title: 'HOME!'
             });
         }
 
